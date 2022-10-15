@@ -1,0 +1,3 @@
+C:/clionprojects/3judge the weekday/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/clionprojects/3judge the weekday/cmake-build-debug/CMakeFiles/3judge_the_weekday.dir
+C:/clionprojects/3judge the weekday/cmake-build-debug/CMakeFiles/rebuild_cache.dir

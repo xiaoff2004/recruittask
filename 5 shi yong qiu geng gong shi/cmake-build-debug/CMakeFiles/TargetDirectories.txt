@@ -1,0 +1,3 @@
+C:/clionprojects/5 shi yong qiu geng gong shi/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/clionprojects/5 shi yong qiu geng gong shi/cmake-build-debug/CMakeFiles/5_shi_yong_qiu_geng_gong_shi.dir
+C:/clionprojects/5 shi yong qiu geng gong shi/cmake-build-debug/CMakeFiles/rebuild_cache.dir

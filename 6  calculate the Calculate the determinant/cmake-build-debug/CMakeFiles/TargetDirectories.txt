@@ -1,0 +1,3 @@
+C:/clionprojects/6  calculate the Calculate the determinant/cmake-build-debug/CMakeFiles/6__calculate_the_Calculate_the_determinant.dir
+C:/clionprojects/6  calculate the Calculate the determinant/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/clionprojects/6  calculate the Calculate the determinant/cmake-build-debug/CMakeFiles/rebuild_cache.dir

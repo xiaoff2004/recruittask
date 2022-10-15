@@ -1,0 +1,3 @@
+C:/clionprojects/4 print the calendar/cmake-build-debug/CMakeFiles/4_print_the_calendar.dir
+C:/clionprojects/4 print the calendar/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/clionprojects/4 print the calendar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
