@@ -1,0 +1,192 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/13/2022  16:10:19  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ptoject.obj, .\Objects\priject.obj, .\Objects\main.obj TO .\Objects\project PRINT 
+>> (.\Listings\project.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\ptoject.obj (PTOJECT)
+  .\Objects\priject.obj (PRIJECT)
+  .\Objects\main.obj (MAIN)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\project (PTOJECT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0093H     UNIT         ?PR?MAIN?PTOJECT
+            CODE    0096H     000FH     UNIT         ?PR?_DELAYXMS?PTOJECT
+            CODE    00A5H     000CH     UNIT         ?C_C51STARTUP
+            CODE    00B1H     0009H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\project (PTOJECT)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PTOJECT
+
+?PR?MAIN?PTOJECT
+  +--> ?PR?_DELAYXMS?PTOJECT
+
+
+
+IGNORED SYMBOLS:
+   MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\project (PTOJECT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/13/2022  16:10:19  PAGE 2
+
+
+  -------         MODULE        PTOJECT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00E8H         PUBLIC        P4
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0003H         PUBLIC        main
+  B:00A0H.0       PUBLIC        P20
+  B:00A0H.1       PUBLIC        P21
+  D:0098H         PUBLIC        SCON
+  B:00A0H.2       PUBLIC        P22
+  D:0088H         PUBLIC        TCON
+  B:00A0H.3       PUBLIC        P23
+  B:00A0H.4       PUBLIC        P24
+  B:00A0H.5       PUBLIC        P25
+  B:00A0H.6       PUBLIC        P26
+  B:00A0H.7       PUBLIC        P27
+  C:0096H         PUBLIC        _Delayxms
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAYXMS
+  D:0006H         SYMBOL        xms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  D:0003H         SYMBOL        k
+  -------         ENDDO         
+  C:0096H         LINE#         4
+  C:0096H         LINE#         5
+  C:0096H         LINE#         8
+  C:0097H         LINE#         9
+  C:0099H         LINE#         10
+  C:009BH         LINE#         11
+  C:009DH         LINE#         13
+  C:009DH         LINE#         15
+  C:009DH         LINE#         16
+  C:009FH         LINE#         17
+  C:00A1H         LINE#         18
+  C:00A3H         LINE#         19
+  C:00A4H         LINE#         20
+  -------         ENDPROC       _DELAYXMS
+  -------         PROC          MAIN
+  C:0003H         LINE#         23
+  C:0003H         LINE#         24
+  C:0003H         LINE#         25
+  C:0005H         LINE#         26
+  C:000CH         LINE#         27
+  C:000EH         LINE#         28
+  C:0015H         LINE#         29
+  C:0017H         LINE#         30
+  C:001EH         LINE#         31
+  C:0020H         LINE#         32
+  C:0027H         LINE#         33
+  C:0029H         LINE#         34
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/13/2022  16:10:19  PAGE 3
+
+
+  C:0030H         LINE#         35
+  C:0032H         LINE#         36
+  C:0039H         LINE#         37
+  C:003BH         LINE#         38
+  C:0042H         LINE#         39
+  C:0044H         LINE#         40
+  C:004BH         LINE#         41
+  C:004DH         LINE#         42
+  C:0054H         LINE#         43
+  C:0056H         LINE#         44
+  C:005DH         LINE#         45
+  C:005FH         LINE#         46
+  C:0066H         LINE#         47
+  C:0068H         LINE#         48
+  C:006FH         LINE#         49
+  C:0071H         LINE#         50
+  C:0078H         LINE#         51
+  C:007AH         LINE#         52
+  C:0081H         LINE#         53
+  C:0083H         LINE#         54
+  C:008AH         LINE#         55
+  C:008CH         LINE#         56
+  C:0093H         LINE#         77
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PTOJECT
+
+  -------         MODULE        PRIJECT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  -------         ENDMOD        PRIJECT
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00E8H         PUBLIC        P4
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:00B1H         PUBLIC        main
+  B:00A0H.0       PUBLIC        P20
+  B:00B0H.0       PUBLIC        P30
+  D:0098H         PUBLIC        SCON
+  B:00B0H.1       PUBLIC        P31
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:00B1H         LINE#         3
+  C:00B1H         LINE#         4
+  C:00B7H         LINE#         5
+  C:00B9H         LINE#         7
+  C:00B9H         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/13/2022  16:10:19  PAGE 4
+
+
+    SYMBOL:  MAIN
+    MODULE:  .\Objects\main.obj (MAIN)
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?MAIN
+
+Program Size: data=9.0 xdata=0 code=186
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  1 ERROR(S)

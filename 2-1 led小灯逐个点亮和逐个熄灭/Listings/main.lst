@@ -1,0 +1,75 @@
+C51 COMPILER V9.54   MAIN                                                                  10/13/2022 16:25:08 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE ..\3-1 独立按键控制led小灯的状态\main.c OPTIMIZE(8,SPEED) BROWSE DEBUG O
+                    -BJECTEXTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <STC89C5xRC.H>
+   2          
+   3          #include <STC89C5xRC.H>
+   4          #include <INTRINS.H>
+   5          
+   6          void Delay(unsigned int xms)
+   7          {
+   8   1        unsigned char i, j;
+   9   1        while(xms--)
+  10   1        {
+  11   2          i = 2;
+  12   2          j = 239;
+  13   2          do
+  14   2          {
+  15   3            while (--j);
+  16   3          } while (--i);
+  17   2        }
+  18   1      }
+  19          
+  20          
+  21          void main(){
+  22   1        while(1){
+  23   2          P20=0;
+  24   2            Delayxms(50);
+*** WARNING C206 IN LINE 24 OF ..\3-1 独立按键控制led小灯的状态\main.c: 'Delayxms': missing function-prototype
+*** ERROR C267 IN LINE 24 OF ..\3-1 独立按键控制led小灯的状态\main.c: 'Delayxms': requires ANSI-style prototype
+  25   2          P21=0;
+  26   2            Delayxms(50);
+  27   2          P22=0;
+  28   2            Delayxms(50);
+  29   2          P23=0;
+  30   2            Delayxms(50);
+  31   2          P24=0;
+  32   2            Delayxms(50);
+  33   2          P25=0;
+  34   2            Delayxms(50);
+  35   2          P26=0;
+  36   2            Delayxms(50);
+  37   2          P27=0;
+  38   2            Delayxms(50);
+  39   2          P27=1;
+  40   2          Delayxms(100);
+  41   2          P26=1;
+  42   2            Delayxms(50);
+  43   2          P25=1;
+  44   2            Delayxms(50);
+  45   2          P24=1;
+  46   2            Delayxms(50);
+  47   2          P23=1;
+  48   2            Delayxms(50);
+  49   2          P22=1;
+  50   2            Delayxms(50);
+  51   2          P21=1;
+  52   2            Delayxms(50);
+C51 COMPILER V9.54   MAIN                                                                  10/13/2022 16:25:08 PAGE 2   
+
+  53   2          P20=1;
+  54   2            Delayxms(50);
+  55   2      
+  56   2        }
+  57   1        
+  58   1          
+  59   1      }
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  1 ERROR(S)
